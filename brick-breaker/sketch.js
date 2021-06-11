@@ -158,15 +158,15 @@ function checkWin(){
         textSize(36);
         fill('white');
         textAlign(CENTER);
-        let winMessage = random(5);
-        gameWin = text(gameWin[winMessage]);
+        let winMessage = parseInt(random(5));
+        gameWin = text(gameWin[winMessage], width/2, height/2 + 50);
     }
     else if(lives == 0){
         textSize(36);
         fill('white');
         textAlign(CENTER);
-        let loseMessage = random(5);
-        gameOver = text(gameOver[loseMessage]);
+        let loseMessage = parseInt(random(5));
+        gameOver = text(gameOver[loseMessage], width/2, height/2 + 50);
     }
     else {
         return;
